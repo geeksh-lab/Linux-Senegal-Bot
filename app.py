@@ -75,8 +75,12 @@ def noms(bot, update):
 
 def devs(bot, update):
     """Envoyer un message lorsque la commande /devs est émis."""
-    update.message.reply_text("1. @dofbi\n2. Mouhamed Fadel\n3. @bay_dam\n4. Cheick Ahmed Tidiane Dieng\n5. James Gaglo")
+    update.message.reply_text("1. @dofbi\n2. Mouhamed Fadel\n3. @bay_dam\n4. Cheick Ahmed Tidiane Dieng\n5. James Gaglo\n6. @kuntakintaay")
 
+    """ #fonction pour message de bienvenue (by @Sudo3k)
+def welcome(bot, update):
+    getUsername = str(update.message.from_user.username)
+    update.message.reply_text("La communauté Linux Sénégal vous souhaites la bienvenue: " +getUsername )"""
 
 def commande(bot, update, args, job_queue, chat_data):
     """Envoyer un message lorsque la commande /exe est émis."""
